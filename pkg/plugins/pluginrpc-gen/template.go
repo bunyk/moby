@@ -37,12 +37,7 @@ func marshalType(t string) string {
 }
 
 func isErr(t string) bool {
-	switch t {
-	case "error":
-		return true
-	default:
-		return false
-	}
+	return t == "error"
 }
 
 // Need to use this helper due to issues with go-vet
